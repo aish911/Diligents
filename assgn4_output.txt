@@ -1,0 +1,59 @@
+Enter choice ...
+1)append 
+2)delete 
+3)Which version to display
+4)exit
+1
+1
+Enter line ...
+
+hello
+0
+hello
+
+Data successfully appended at the end of file
+Enter choice ...
+1)append 
+2)delete 
+3)Which version to display
+4)exit
+1
+2
+Enter line ...
+
+world
+1
+hello
+world
+
+Data successfully appended at the end of file
+Enter choice ...
+1)append 
+2)delete 
+3)Which version to display
+4)exit
+3
+Which version to display(1,2,3..)
+1
+0
+hello
+
+Enter choice ...
+1)append 
+2)delete 
+3)Which version to display
+4)exit
+3
+Which version to display(1,2,3..)
+2
+1
+hello
+world
+
+Enter choice ...
+1)append 
+2)delete 
+3)Which version to display
+4)exit
+4
+Operation Finished
