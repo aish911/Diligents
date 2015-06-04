@@ -1,0 +1,75 @@
+___________________________________________________________________
+
+
+                 Analysing weblog.txt file                                      
+
+
+Total                                  
+
+Total Hits                             2778
+Average Hits per day                   463
+Unique IPs                             166
+Total requests                         2608
+Total responses                        158
+Total HEAD requests                    12
+
+Status Code                            Count
+200                                    2196
+206                                    1
+302                                    151
+304                                    203
+404(Client Failed requests)            226
+500(Server Failed requests)            1
+____________________________________________________________________
+
+                  Data about twibuzz.com      
+
+Total Hits                            1913
+Average Hits                          318
+Unique IPs                            108
+
+Date Wise analysis 
+
+Date                                  Total Hits                
+14 May 2009                           382            
+15 May 2009                           238            
+16 May 2009                           399            
+17 May 2009                           306            
+18 May 2009                           219            
+19 May 2009                           369     
+
+       
+____________________________________________________________________
+
+                 Data about kinneryandrajan.com                                
+
+Total Hits                            850
+Average hits                          141
+Unique IPs                            60
+
+Date Wise analysis 
+
+Date                                  Total hits    
+14 May 2009                           130
+15 May 2009                           211
+16 May 2009                           99
+17 May 2009                           127
+18 May 2009                           75
+19 May 2009                           208
+____________________________________________________________________
+
+                   Data about recipewithme.com                                
+
+Total Hits                            17
+Average hits                          2
+Unique ips                            7
+
+Date Wise analysis 
+
+Date                                  Total Hits        
+14 May 2009                           2    
+15 May 2009                           4    
+16 May 2009                           1    
+17 May 2009                           2    
+18 May 2009                           2    
+19 May 2009                           6    
