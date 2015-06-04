@@ -1,0 +1,91 @@
+[ash@localhost ~]$ su
+Password: 
+[root@localhost ash]# cd Music/l3cube/duplicate_Files/
+[root@localhost duplicate_Files]# ls
+a1  dup1.py      dup2_fin.py~  dup.py   Hardlink final
+a2  dup2_fin.py  dup2.py~      dup.py~  list_dup.py
+[root@localhost duplicate_Files]# ls
+a1  dup1.py      dup2_fin.py~  dup2.py~  dup.py~         list_dup.py
+a2  dup2_fin.py  dup2.py       dup.py    Hardlink final
+[root@localhost duplicate_Files]# python dup2.py .
+LIST OF DUPLICATE FILES 
+
+./Hardlink final/timepass.txt~
+./Hardlink final/timepass.txt
+LIST OF DUPLICATE FILES 
+
+./a2/15565_854026504659593_7454884152817065053_n.jpg
+./a1/15565_854026504659593_7454884152817065053_n.jpg
+
+Do u want to remove duplicate files?(Y/N)Y
+.:
+total 108
+4195028 drwxrwxrwx. 2 ash ash  4096 Jun  4 20:48 a1
+4195035 drwxrwxr-x. 2 ash ash  4096 Jun  4 20:49 a2
+
+
+./a1:
+total 132
+3802743 -rw-rw-r--. 7 ash ash 87145 Apr 18 22:39 11139451_882320298493400_4412473854789721807_n.jpg
+4194410 -rw-rw-r--. 1 ash ash 43183 Apr 18 22:35 15565_854026504659593_7454884152817065053_n.jpg
+
+./a2:
+total 176
+4194507 -rw-rw-r--. 1 ash ash 43183 Apr 18 22:35 15565_854026504659593_7454884152817065053_n (copy).jpg
+4194503 -rw-rw-r--. 1 ash ash 43183 Apr 18 22:35 15565_854026504659593_7454884152817065053_n.jpg
+3802743 -rw-rw-r--. 7 ash ash 87145 Apr 18 22:39 a.jpg
+
+./Hardlink final:
+total 24
+
+Comparing: /home/ash/Music/l3cube/duplicate_Files/a2/15565_854026504659593_7454884152817065053_n (copy).jpg
+     to  : /home/ash/Music/l3cube/duplicate_Files/a1/15565_854026504659593_7454884152817065053_n.jpg
+Linked: /home/ash/Music/l3cube/duplicate_Files/a1/15565_854026504659593_7454884152817065053_n.jpg
+     to: /home/ash/Music/l3cube/duplicate_Files/a2/15565_854026504659593_7454884152817065053_n (copy).jpg, saved 43183
+Comparing: /home/ash/Music/l3cube/duplicate_Files/a2/15565_854026504659593_7454884152817065053_n.jpg
+     to  : /home/ash/Music/l3cube/duplicate_Files/a1/15565_854026504659593_7454884152817065053_n.jpg
+Linked: /home/ash/Music/l3cube/duplicate_Files/a1/15565_854026504659593_7454884152817065053_n.jpg
+     to: /home/ash/Music/l3cube/duplicate_Files/a2/15565_854026504659593_7454884152817065053_n.jpg, saved 43183
+
+
+
+Hard linking Statistics:
+Files Hardlinked this run:
+Hardlinked: /home/ash/Music/l3cube/duplicate_Files/a1/15565_854026504659593_7454884152817065053_n.jpg
+        to: /home/ash/Music/l3cube/duplicate_Files/a2/15565_854026504659593_7454884152817065053_n (copy).jpg
+Hardlinked: /home/ash/Music/l3cube/duplicate_Files/a1/15565_854026504659593_7454884152817065053_n.jpg
+        to: /home/ash/Music/l3cube/duplicate_Files/a2/15565_854026504659593_7454884152817065053_n.jpg
+
+Directories           : 4
+Regular files         : 18
+Comparisons           : 4
+Hardlinked this run   : 4
+Total hardlinks       : 7
+Bytes saved this run  : 100437 (98.083 kibibytes)
+Total bytes saved     : 202791 (198.038 kibibytes)
+Total run time        : 5.77296495438 seconds
+
+
+[root@localhost duplicate_Files]# ls -liR
+.:
+total 108
+4195028 drwxrwxrwx. 2 ash ash  4096 Jun  4 20:48 a1
+4195035 drwxrwxr-x. 2 ash ash  4096 Jun  4 20:50 a2
+
+./a1:
+total 132
+3802743 -rw-rw-r--. 7 ash ash 87145 Apr 18 22:39 11139451_882320298493400_4412473854789721807_n.jpg
+4194410 -rw-rw-r--. 3 ash ash 43183 Apr 18 22:35 15565_854026504659593_7454884152817065053_n.jpg
+
+./a2:
+total 176
+4194410 -rw-rw-r--. 3 ash ash 43183 Apr 18 22:35 15565_854026504659593_7454884152817065053_n (copy).jpg
+4194410 -rw-rw-r--. 3 ash ash 43183 Apr 18 22:35 15565_854026504659593_7454884152817065053_n.jpg
+3802743 -rw-rw-r--. 7 ash ash 87145 Apr 18 22:39 a.jpg
+
+./Hardlink final:
+total 24
+3676114 -rw-rw-r--. 2 ash ash 13550 Jun  3 16:18 dup2.py
+3802851 -rw-rw-r--. 2 ash ash   521 Jun  4 20:46 timepass.txt
+3802851 -rw-rw-r--. 2 ash ash   521 Jun  4 20:46 timepass.txt~
+[root@localhost duplicate_Files]# 
